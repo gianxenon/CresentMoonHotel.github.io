@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> </title>
+		<link rel="stylesheet" href="styles/southOfMarket.css" />
+		<link rel="stylesheet" href="styles/media_query/southOfMarket_query.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="styles/img_view.css" />
+		<style>
+			#myBtn {
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				font-size: 18px;
+				border: none;
+				outline: none;
+				color: white;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 4px;
+				display: none;
+				background-color: rgb(18, 63, 129);
+			}
+
+			#myBtn:hover {
+				background-color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="body_containerss" id="bodyContainer" onscroll="scrollFnctiom()">
+			<div class="top_bar" id="top_bar">
+				<img
+					class="index_logo"
+					src="./main_page/assets/Crescent.png"
+					width="90px"
+				/>
+				<h2 class="company_name_text">
+					CRESCENT CONDO AND OFFICE RENTALS INC.
+				</h2>
+
+				<ul class="ul_class" id="ul_class">
+					<li><a href="index.html" class="btn_home">HOME</a></li>
+					<li>
+						<a href="belagio1.html"> BELLAGIO 1 </a>
+					</li>
+					<li class="dropdown_button" id="dropdown_button" onclick="dropMenu()">
+						<a class="btn_SouthOfMarket">
+							SOUTH OF MARKET
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a class="soma" id="soma" href="SouthOfMarket.html"
+								>Soma-One-BR</a
+							>
+							<a id="soma" href="soma2.html">Soma-Two- BR </a>
+						</div>
+					</li>
+					<li>
+						<a href="TwoSerendra.html"> TWO SERENDRA </a>
+					</li>
+					<li>
+						<a class="op_active active" href="otherProperties.html"
+							>OTHER PROPERTIES</a
+						>
+					</li>
+				</ul>
+				<div id="container_id" class="container" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+			<!-- End of Navigation Bar -->
+			<div class="sub_topBar">
+				<div class="row row_subTopBar">
+					<div class="column topBar_Section">
+						<h3>Check our available studios:</h3>
+					</div>
+					<div class="column topBar_SectionTwo">
+						<a class="subBar_a" id="soma_1" onclick="subBarBtn(this.id)"
+							>HIGH STREET SOUTH CORPORATE PLAZA</a
+						>
+						<a class="subBar_a" id="soma_2" onclick="subBarBtn(this.id)">
+							OFFICE SPACE FOR LEASE
+						</a>
+						<a class="subBar_a" id="soma_3" onclick="subBarBtn(this.id)"
+							>WEST GALLERY</a
+						>
+
+						<a class="subBar_a" id="soma_5" onclick="subBarBtn(this.id)"
+							>ALVEO PARK TRIANGLE TOWER</a
+						>
+						<a class="subBar_a" id="soma_4" onclick="subBarBtn(this.id)"
+							>THE MONTANE</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="row southOfMarket_intro">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro">
+					<h1>HIGH STREET SOUTH CORPORATE PLAZA</h1>
+
+					<h3
+						style="
+							margin-top: 20px;
+							max-width: 700px;
+							font-size: 20px;
+							font-weight: 400;
+						"
+					>
+						High Street South Corporate Plaza, is a 28-storey two building
+						development, located at 26th Street corner 11th Avenue, Bonifacio
+						Global City. An office condominium, it redefines commercial
+						investment opportunity. It is a rare investment opportunity in one
+						of the most prominent addresses ever offered in Metro Manila.<br />
+						<br />The first two floors shall be commercial units for lease by
+						Ayala Malls, then the four consecutive floors shall house the
+						parking allotments. The office units will start at the Podium with
+						22-levels of 95 to 389 SQM office space/s in a floor.
+					</h3>
+				</div>
+
+				<div class="column sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/high_towerview.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/high_lobby.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/pic6.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/pic7.jpg"
+								style="object-fit: fill"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<!-- <div class="column row_one">
+							<img
+								src="./main_page/assets/tw-BEDROOM.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/tw-BATHROOM.jpg"
+								style="object-fit: cover, contain"
+								width="100%"
+								height="100%"
+							/>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_one" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro1">
+					<h1>OFFICE SPACE FOR LEASE <sup>(NOT AVAILABLE)</sup></h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt style="font-size: 20px">Price:</dt>
+						<li style="padding-left: 40px; font-size: 18px">
+							<span style="color: red; font-weight: 700">PHP 1,500.00</span>
+							per square meter + VAT + Dues
+						</li>
+						<dt style="margin-top: 20px; font-size: 20px">Address</dt>
+						<li style="margin-top: 20px; padding-left: 40px; font-size: 18px">
+							High Street South Croporate Plaza, 26th corner 9th, Bonifacio
+							Global City, Taguig City
+						</li>
+						<dt style="margin-top: 20px; font-size: 20px">Floor Area:</dt>
+						<li style="margin-top: 20px; padding-left: 40px; font-size: 18px">
+							184 sq.m.
+						</li>
+
+						<dt style="margin-top: 20px; font-size: 20px">Details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px; font-size: 18px">
+								<li>Corner unit</li>
+								<li>bare type</li>
+								<li>high floor Facing Laguna De Bay</li>
+							</ul>
+						</dd>
+						<dt style="margin-top: 20px; font-size: 20px">
+							BUILDING SPECIFICATIONS:
+						</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px; font-size: 18px">
+								<li>Turnover Condition</li>
+								<li>
+									bare and plain cement finish for flooring, ready to receive
+									finish at 1-inch depth, Bare and Plain Cement Finish for
+									Ceiling, No unit partitions.
+								</li>
+								<li>
+									Telecoms and Broadbands - Globe and PLDT, fiber optic
+									backbones.
+								</li>
+								<li>
+									Elevators - 6 high zone elevators and 6 low zones elevators, 3
+									parking elevators (25-28 seconds waiting time), 1 service
+									elevator serving all floors.
+								</li>
+								<li>
+									Climate Control - Centralized chilled water system to all
+									units and hallways, with modular variable speed design.
+								</li>
+								<li>
+									Building Management System - Control and monitoring of
+									lightning, air conditioning and water supply in common areas
+									Monitoring of power air conditioning and water supply in
+									office units.
+								</li>
+								<li>Security System - CCTV Camera and RFID Access Card.</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/other_img4.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/other_img5.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/other_img2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/other_img3.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/other_img1.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(5);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/other_img6.jpg"
+								style="object-fit: fill"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(6);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_two" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro2">
+					<h1>WEST GALLERY</h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Selling price:</dt>
+						<dd style="padding-left: 40px">
+							-
+							<span style="color: red; font-weight: 700">PHP 55,000,000</span>
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- 130 sq.m.</dd>
+
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>No. of Bedrooms:2</li>
+								<li>One Parking</li>
+								<li>One Storage Room</li>
+								<li>High Floor</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/wg_Building.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/wg_Lobby.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/wg_Floorplan.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<!-- <div class="column row_one">
+							<img
+								src="./main_page/assets/S29_corner.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/S29_bedroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/S29_bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_two" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro3">
+					<h1>ALVEO PARK TRIANGLE TOWER (PREMIER BUILDING)</h1>
+
+					<dt style="font-size: 20px">Price:</dt>
+					<li style="padding-left: 40px; font-size: 24px">
+						<span style="color: red; font-weight: 700">PHP 1,100</span>
+						per square meter + VAT + Dues
+					</li>
+					<dt style="margin-top: 20px; font-size: 20px">Address</dt>
+					<li style="margin-top: 20px; padding-left: 40px; font-size: 24px">
+						Alveo Park Triangle Tower, 32nd Street, 11th Ave, Taguig, Metro
+						Manila
+					</li>
+					<dt style="margin-top: 20px; font-size: 20px">Floor Area:</dt>
+					<li style="margin-top: 20px; padding-left: 40px; font-size: 24px">
+						100 sq.m.
+					</li>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/Unit number.jpg"
+								style="object-fit: fill"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/Capture.JPG"
+								style="object-fit: fill"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/apt1.jpg"
+								style="object-fit: fill"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/apt2.jpg"
+								style="object-fit: fill"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<!-- 
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/S29_bedroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/S29_bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+							/>
+						</div> -->
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_three" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro4">
+					<h1>THE MONTANE <sup>(NOT AVAILABLE)</sup></h1>
+
+					<dl style="font-size: 26px; margin-top: 20px">
+						<dt>Rental Rate:</dt>
+						<dd style="padding-left: 40px">
+							- <span style="color: red; font-weight: 700">Php100,000</span>
+						</dd>
+						<dt>Address</dt>
+						<dd style="padding-left: 40px">
+							- 8th Avenue Cor. 35th Street, North Bonifacio Global City
+						</dd>
+						<dt>Floor Area:</dt>
+						<dd style="padding-left: 40px">- Area:84.33sq.m.</dd>
+
+						<dt style="margin-top: 20px">Additional details:</dt>
+						<dd>
+							<ul style="padding-left: 40px; margin-top: 20px">
+								<li>Fully furnished</li>
+								<li>Association dues</li>
+								<li>One Parking</li>
+								<li>Newly renovated</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_LivingRoom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_DinnerArea.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_Kitchen.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_CommonCr.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_MastereBed.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(5);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_MasterCr.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(6);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_secondRoom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(7);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_thirdRoom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(8);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/op_Cr.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal5');currentSlide5(9);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- MODALS -->
+
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/high_towerview.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/high_lobby.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/pic6.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/pic7.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal2" class="modal">
+				<span class="close cursor" onclick="closeModal2()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/other_img4.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/other_img5.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/other_img2.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/other_img3.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/other_img1.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/other_img6.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal3" class="modal">
+				<span class="close cursor" onclick="closeModal3()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/wg_Building.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/wg_Lobby.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/wg_Floorplan.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides3(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal4" class="modal">
+				<span class="close cursor" onclick="closeModal4()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/Unit number.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/Capture.JPG"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/apt1.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/apt2.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides4(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal5" class="modal">
+				<span class="close cursor" onclick="closeModal5()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_LivingRoom.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_DinnerArea.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_Kitchen.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_CommonCr.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_MastereBed.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_MasterCr.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_secondRoom.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_thirdRoom.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides5">
+						<img
+							src="./main_page/assets/op_Cr.jpg"
+							style="width: 100%; height: 500px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides5(1)">&#10095;</a>
+				</div>
+			</div>
+			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
+				Top
+			</button>
+		</div>
+
+		<!-- Script -->
+
+		<script>
+			function scrollFnctiom() {
+				const bodyscrll = document.getElementById("bodyContainer");
+				let bscrll = bodyscrll.scrollTop;
+
+				if (bscrll < 10) {
+					document.getElementById("myBtn").style.display = "block";
+				}
+
+				if (bscrll == 0) {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+
+			function openModal(x) {
+				var v = x;
+				switch (v) {
+					case "myModal":
+						document.getElementById("myModal").style.display = "block";
+						break;
+					case "myModal2":
+						document.getElementById("myModal2").style.display = "block";
+						break;
+					case "myModal3":
+						document.getElementById("myModal3").style.display = "block";
+						break;
+					case "myModal4":
+						document.getElementById("myModal4").style.display = "block";
+						break;
+					case "myModal5":
+						document.getElementById("myModal5").style.display = "block";
+						break;
+					case "myModal6":
+						document.getElementById("myModal6").style.display = "block";
+						break;
+					default:
+						location.href = "SouthOfMarket.html";
+						break;
+				}
+			}
+			// modal 1
+			function closeModal() {
+				document.getElementById("myModal").style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides((slideIndex += n));
+			}
+
+			function currentSlide(n) {
+				showSlides((slideIndex = n));
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slides[slideIndex - 1].style.display = "block";
+			}
+			//2
+
+			function closeModal2() {
+				document.getElementById("myModal2").style.display = "none";
+			}
+			var slideIndexs = 1;
+			showSlides2(slideIndexs);
+
+			function currentSlide2(n) {
+				showSlides2((slideIndexs = n));
+			}
+			function plusSlides2(n) {
+				showSlides2((slideIndexs += n));
+			}
+
+			function showSlides2(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides2");
+
+				if (n > slides.length) {
+					slideIndexs = 1;
+				}
+				if (n < 1) {
+					slideIndexs = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs - 1].style.display = "block";
+			}
+
+			//3
+
+			function closeModal3() {
+				document.getElementById("myModal3").style.display = "none";
+			}
+			var slideIndexs3 = 1;
+			showSlides3(slideIndexs3);
+
+			function currentSlide3(n) {
+				showSlides3((slideIndexs3 = n));
+			}
+			function plusSlides3(n) {
+				showSlides3((slideIndexs3 += n));
+			}
+
+			function showSlides3(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides3");
+
+				if (n > slides.length) {
+					slideIndexs3 = 1;
+				}
+				if (n < 1) {
+					slideIndexs3 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs3 - 1].style.display = "block";
+			}
+
+			//4
+			function closeModal4() {
+				document.getElementById("myModal4").style.display = "none";
+			}
+			var slideIndexs4 = 1;
+			showSlides4(slideIndexs4);
+
+			function currentSlide4(n) {
+				showSlides4((slideIndexs4 = n));
+			}
+			function plusSlides4(n) {
+				showSlides4((slideIndexs4 += n));
+			}
+
+			function showSlides4(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides4");
+
+				if (n > slides.length) {
+					slideIndexs4 = 1;
+				}
+				if (n < 1) {
+					slideIndexs4 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs4 - 1].style.display = "block";
+			}
+
+			//5
+			function closeModal5() {
+				document.getElementById("myModal5").style.display = "none";
+			}
+			var slideIndexs5 = 1;
+			showSlides5(slideIndexs5);
+
+			function currentSlide5(n) {
+				showSlides5((slideIndexs5 = n));
+			}
+			function plusSlides5(n) {
+				showSlides5((slideIndexs5 += n));
+			}
+
+			function showSlides5(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides5");
+
+				if (n > slides.length) {
+					slideIndexs5 = 1;
+				}
+				if (n < 1) {
+					slideIndexs5 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs5 - 1].style.display = "block";
+			}
+
+			function subBarBtn(x) {
+				var v = x;
+				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro");
+				var sOm_TxtIntro2 = document.getElementById("sOm_TxtIntro1");
+				var sOm_TxtIntro3 = document.getElementById("sOm_TxtIntro2");
+				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro3");
+				var sOm_TxtIntro5 = document.getElementById("sOm_TxtIntro4");
+				var top_bar = document.getElementById("top_bar");
+				switch (v.trim()) {
+					case "soma_1":
+						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
+						location.href = "otherProperties.html#sOm_TxtIntro";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_2":
+						sOm_TxtIntro2.scrollIntoView({ behavior: "smooth" });
+						location.href = "otherProperties.html#sOm_TxtIntro1";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_3":
+						sOm_TxtIntro3.scrollIntoView({ behavior: "smooth" });
+						location.href = "otherProperties.html#sOm_TxtIntro2";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_5":
+						sOm_TxtIntro4.scrollIntoView({ behavior: "smooth" });
+						location.href = "otherProperties.html#sOm_TxtIntro3";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_4":
+						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
+						location.href = "otherProperties.html#sOm_TxtIntro4";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "myBtn":
+						top_bar.scrollIntoView({ behavior: "smooth" });
+						document.getElementById("myBtn").style.display = "none";
+						break;
+					default:
+						location.href = "otherProperties.html";
+				}
+			}
+
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+
+			function menuIcon() {
+				const value = document.getElementById("container_id");
+				var displayss = document.getElementById("top_bar");
+				var ul_class = document.getElementById("ul_class");
+				value.classList.toggle("change");
+				if (value.className == "container change") {
+					displayss.style.height = "auto";
+					displayss.style.width = "100%";
+					ul_class.style.display = "block";
+				} else {
+					ul_class.style.display = "none";
+					displayss.style.height = "90px";
+				}
+			}
+
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				if (x.matches) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x); // Call listener function at run time
+
+			x.addListener(mySAdwasd); // Attach listener function on state changes
+		</script>
+	</body>
+</html>

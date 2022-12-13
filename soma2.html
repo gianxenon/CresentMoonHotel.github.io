@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> </title>
+		<link rel="stylesheet" href="styles/southOfMarket.css" />
+		<link rel="stylesheet" href="styles/img_view.css" />
+		<link rel="stylesheet" href="styles/media_query/southOfMarket_query.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+		<style>
+			#myBtn {
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				font-size: 18px;
+				border: none;
+				outline: none;
+				color: white;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 4px;
+				display: none;
+				background-color: rgb(18, 63, 129);
+			}
+
+			#myBtn:hover {
+				background-color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div
+			class="body_containers"
+			id="body_containers"
+			onscroll="scrollFnctiom()"
+		>
+			<div class="top_bar" id="top_bar">
+				<img
+					class="index_logo"
+					src="./main_page/assets/Crescent.png"
+					width="90px"
+				/>
+				<h2 class="company_name_text">
+					CRESCENT CONDO AND OFFICE RENTALS INC.
+				</h2>
+
+				<ul class="ul_class" id="ul_class">
+					<li><a href="index.html" class="btn_home">HOME</a></li>
+					<li>
+						<a href="belagio1.html">
+							BELLAGIO 1
+							<!-- <i class="fa fa-caret-down"></i> -->
+						</a>
+						<!-- <div class="dropdown-content">
+							<a href="#">SoMa 1</a>
+							<a href="#">SoMa 2</a>
+						</div> -->
+					</li>
+					<li class="dropdown_button" id="dropdown_button" onclick="dropMenu()">
+						<a class="btn_SouthOfMarket active">
+							SOUTH OF MARKET
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a class="soma" id="soma" href="SouthOfMarket.html"
+								>Soma-One-BR</a
+							>
+							<a class="soma active" id="soma2" href="soma2.html"
+								>Soma-Two- BR
+							</a>
+						</div>
+					</li>
+					<li><a href="twoSerendra.html">TWO SERENDRA</a></li>
+					<li>
+						<a href="otherProperties.html">OTHER PROPERTIES</a>
+					</li>
+				</ul>
+				<div id="container_id" class="container" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+			<!-- End of Navigation Bar -->
+			<div class="sub_topBar">
+				<div class="row row_subTopBar">
+					<div class="column topBar_Section">
+						<h3>Check our available studios:</h3>
+					</div>
+					<div class="column topBar_SectionTwo">
+						<a class="subBar_a" id="soma_1" onclick="subBarBtn(this.id)">
+							SOMA TWO-BR (1)</a
+						>
+						<a class="subBar_a" id="soma_2" onclick="subBarBtn(this.id)"
+							>SOMA TWO-BR (2)</a
+						>
+						<a class="subBar_a" id="soma_3" onclick="subBarBtn(this.id)"
+							>SOMA TWO-BR (3)</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="row southOfMarket_intro">
+				<div class="column sOm_TxtIntro">
+					<h1>South of Market</h1>
+					<p>
+						South of Market Private Residences, SOMA, is a 40-story twin tower
+						development, located at 25th Street corner 11th Avenue, Bonifacio
+						Global City.<br /><br />
+						Enjoy using SoMa's facilities. It has an air conditioned gym, a lap
+						pool with adjoining kiddie pool, a billiard room, THX Theater room,
+						SPA area and a function room. In terms of security, there is 24 x 7
+						entrance security, doorman-lobby guard, closed circuit TV. The
+						building offers convenient access to getting public transportation
+						at 11th Avenue or at 26th Street. The building offers convenient
+						access to getting public transportation at the Market! Market! and
+						close enough to St. Lukes's Medical Facility, all within 15 minutes'
+						walk.
+					</p>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7723.8303918524125!2d121.05196400000001!3d14.546842000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb54626bde471e7f9!2sSouth%20of%20Market%20Private%20Residences!5e0!3m2!1sen!2sph!4v1663512821344!5m2!1sen!2sph"
+						width="100%"
+						height="320"
+						style="border: 0; margin-top: 20px"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+
+				<div class="column sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/s1.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide1(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/s2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide1(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/newGym.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide1(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/s4.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide1(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/newPool.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide1(5);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/s6.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal');currentSlide1(6);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_one" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro1">
+					<h1>SOMA TWO-BR (1)</h1>
+					<p>
+						The TWO BEDROOM units offer convenience and efficiency.
+						<br /><br />
+						The units are around 75 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided. <br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/2308s-Living Area.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/2308s-Dining Area.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/2308s-Kitchen.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/2308s-Master's Br.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/2308s-2nd Br1.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(5);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/2308s-Bathroom1.JPG"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal2');currentSlide2(6);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_two" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro2">
+					<h1>SOMA TWO-BR (2)</h1>
+					<p>
+						The TWO BEDROOM units offer convenience and efficiency.
+						<br /><br />
+						The units are around 75 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/st2_livingOne.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/st2_livingTwo.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/st2_dining.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/st2_bed.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/st2_bed2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(5);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/st2_bath.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal3');currentSlide3(6);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="soma_three" class="row soma_one">
+				<div class="column sOm_TxtIntro" id="sOm_TxtIntro3">
+					<h1>SOMA TWO-BR (3)</h1>
+					<p>
+						The TWO BEDROOM units offer convenience and efficiency.
+						<br /><br />
+						The units are around 75 sq. m. in floor area, fully furnished, with
+						air-condtioner, a kitchen with range, range hood, refrigerator,
+						microwave oven, and kitchen accessories. Linens and towels are
+						provided.<br />
+						<br />The units are fitted with a balcony with a washing machine
+						with spin dryer. Units come with cable TV and Wi-Fi Internet access.
+					</p>
+				</div>
+
+				<div class="column sOm_ImgBox" id="sOm_ImgBox">
+					<div class="row row_content" id="row_content">
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/sala.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(1);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/dining.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(2);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/kitchen.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(3);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/bed1.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(4);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/bed2.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(5);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+						<div class="column row_one">
+							<img
+								src="./main_page/assets/bathroom.jpg"
+								style="object-fit: cover"
+								width="100%"
+								height="100%"
+								onclick="openModal('myModal4');currentSlide4(6);"
+								class="hover-shadow cursor"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- modals -->
+
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/s1.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/s2.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/newGym.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/s4.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/newPool.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides">
+						<img
+							src="./main_page/assets/s6.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal2" class="modal">
+				<span class="close cursor" onclick="closeModal2()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/2308s-Living Area.JPG"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/2308s-Dining Area.JPG"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/2308s-Kitchen.JPG"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/2308s-Master's Br.JPG"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/2308s-2nd Br1.JPG"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides2">
+						<img
+							src="./main_page/assets/2308s-Bathroom1.JPG"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides2(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal3" class="modal">
+				<span class="close cursor" onclick="closeModal3()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/st2_livingOne.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/st2_livingTwo.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/st2_dining.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/st2_bed.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/st2_bed2.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides3">
+						<img
+							src="./main_page/assets/st2_bath.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides3(1)">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="myModal4" class="modal">
+				<span class="close cursor" onclick="closeModal4()">&times;</span>
+				<div class="modal-content">
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/sala.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/dining.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/kitchen.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/bed1.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/bed2.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+					<div class="mySlides4">
+						<img
+							src="./main_page/assets/bathroom.jpg"
+							style="width: 100%; height: 700px; object-fit: contain"
+						/>
+					</div>
+
+					<a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides4(1)">&#10095;</a>
+				</div>
+			</div>
+			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
+				Top
+			</button>
+		</div>
+
+		<!-- Script -->
+
+		<script>
+			function scrollFnctiom() {
+				const bodyscrll = document.getElementById("body_containers");
+				let bscrll = bodyscrll.scrollTop;
+
+				if (bscrll < 10) {
+					document.getElementById("myBtn").style.display = "block";
+				}
+
+				if (bscrll == 0) {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+			function openModal(x) {
+				var v = x;
+				switch (v) {
+					case "myModal":
+						document.getElementById("myModal").style.display = "block";
+						break;
+					case "myModal2":
+						document.getElementById("myModal2").style.display = "block";
+						break;
+					case "myModal3":
+						document.getElementById("myModal3").style.display = "block";
+						break;
+					case "myModal4":
+						document.getElementById("myModal4").style.display = "block";
+						break;
+					default:
+						location.href = "SouthOfMarket.html";
+						break;
+				}
+			}
+			function closeModal() {
+				document.getElementById("myModal").style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides((slideIndex += n));
+			}
+
+			function currentSlide(n) {
+				showSlides((slideIndex = n));
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndex - 1].style.display = "block";
+			}
+			//2
+
+			function closeModal2() {
+				document.getElementById("myModal2").style.display = "none";
+			}
+			var slideIndexs = 1;
+			showSlides2(slideIndexs);
+
+			function currentSlide2(n) {
+				showSlides2((slideIndexs = n));
+			}
+			function plusSlides2(n) {
+				showSlides2((slideIndexs += n));
+			}
+
+			function showSlides2(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides2");
+				var dots = document.getElementsByClassName("demo");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {
+					slideIndexs = 1;
+				}
+				if (n < 1) {
+					slideIndexs = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs - 1].style.display = "block";
+			}
+
+			//3
+
+			function closeModal3() {
+				document.getElementById("myModal3").style.display = "none";
+			}
+			var slideIndexs3 = 1;
+			showSlides3(slideIndexs3);
+
+			function currentSlide3(n) {
+				showSlides3((slideIndexs3 = n));
+			}
+			function plusSlides3(n) {
+				showSlides3((slideIndexs3 += n));
+			}
+
+			function showSlides3(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides3");
+				var dots = document.getElementsByClassName("demo");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {
+					slideIndexs3 = 1;
+				}
+				if (n < 1) {
+					slideIndexs3 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs3 - 1].style.display = "block";
+			}
+
+			//4
+			function closeModal4() {
+				document.getElementById("myModal4").style.display = "none";
+			}
+			var slideIndexs4 = 1;
+			showSlides4(slideIndexs4);
+
+			function currentSlide4(n) {
+				showSlides4((slideIndexs4 = n));
+			}
+			function plusSlides4(n) {
+				showSlides4((slideIndexs4 += n));
+			}
+
+			function showSlides4(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides4");
+
+				if (n > slides.length) {
+					slideIndexs4 = 1;
+				}
+				if (n < 1) {
+					slideIndexs4 = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndexs4 - 1].style.display = "block";
+			}
+
+			//end of modal
+			function subBarBtn(x) {
+				var v = x;
+				var sOm_TxtIntro1 = document.getElementById("sOm_TxtIntro1");
+				var sOm_TxtIntro2 = document.getElementById("sOm_TxtIntro2");
+				var sOm_TxtIntro3 = document.getElementById("sOm_TxtIntro3");
+				var sOm_TxtIntro4 = document.getElementById("sOm_TxtIntro4");
+				var sOm_TxtIntro5 = document.getElementById("sOm_TxtIntro5");
+				switch (v.trim()) {
+					case "soma_1":
+						sOm_TxtIntro1.scrollIntoView({ behavior: "smooth" });
+						location.href = "soma2.html#sOm_TxtIntro1";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_2":
+						sOm_TxtIntro2.scrollIntoView({ behavior: "smooth" });
+						location.href = "soma2.html#sOm_TxtIntro2";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_3":
+						sOm_TxtIntro3.scrollIntoView({ behavior: "smooth" });
+						location.href = "soma2.html#sOm_TxtIntro3";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_4":
+						sOm_TxtIntro4.scrollIntoView({ behavior: "smooth" });
+						location.href = "soma2.html#sOm_TxtIntro4";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "soma_5":
+						sOm_TxtIntro5.scrollIntoView({ behavior: "smooth" });
+						location.href = "soma2.html#sOm_TxtIntro5";
+						document.getElementById("myBtn").style.display = "block";
+						break;
+					case "myBtn":
+						top_bar.scrollIntoView({ behavior: "smooth" });
+						document.getElementById("myBtn").style.display = "none";
+						break;
+					default:
+						text = "I have never heard of that fruit...";
+				}
+			}
+
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+
+			function menuIcon() {
+				const value = document.getElementById("container_id");
+				var displayss = document.getElementById("top_bar");
+				var ul_class = document.getElementById("ul_class");
+				value.classList.toggle("change");
+				if (value.className == "container change") {
+					displayss.style.height = "auto";
+					displayss.style.width = "100%";
+					ul_class.style.display = "block";
+				} else {
+					ul_class.style.display = "none";
+					displayss.style.height = "90px";
+				}
+			}
+
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				if (x.matches) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x); // Call listener function at run time
+
+			x.addListener(mySAdwasd); // Attach listener function on state changes
+		</script>
+	</body>
+</html>

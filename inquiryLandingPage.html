@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/media_query/index_query.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+
+		<link rel="stylesheet" href="styles/index_css.css" />
+		<style>
+			h1,
+			h3 {
+				display: block;
+				text-align: center;
+				color: antiquewhite;
+			}
+			h1 {
+				position: absolute;
+				top: 20%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				margin-top: 200px;
+				font-size: 55px;
+			}
+			h3 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 27px;
+			}
+		</style>
+		<title>Crescent Condo Office Rentals</title>
+	</head>
+
+	<body>
+		<div class="body-container">
+			<div class="top_bar" id="top_bar">
+				<img
+					class="index_logo"
+					src="./main_page/assets/Crescent.png"
+					width="90px"
+				/>
+				<h2 class="company_name_text">
+					CRESCENT CONDO AND OFFICE RENTALS INC.
+				</h2>
+
+				<ul class="ul_class" id="ul_class">
+					<li><a href="index.html" class="btn_home">HOME</a></li>
+					<li>
+						<a href="belagio1.html"> BELLAGIO 1 </a>
+					</li>
+					<li class="dropdown_button" onclick="dropMenu()">
+						<a class="">
+							SOUTH OF MARKET
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a id="soma" href="SouthOfMarket.html">Soma-One-BR</a>
+							<a id="soma" href="soma2.html">Soma-Two- BR </a>
+						</div>
+					</li>
+					<li><a href="twoSerendra.html">TWO SERENDRA</a></li>
+					<li>
+						<a href="otherProperties.html">OTHER PROPERTIES</a>
+					</li>
+				</ul>
+				<div id="container_id" class="container" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+
+			<h1>Submission Confirmed</h1>
+			<h3>Thank you for inquiry.</h3>
+		</div>
+
+		<!-- JavaScript -->
+
+		<script>
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function () {
+				modal.style.display = "block";
+			};
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function () {
+				modal.style.display = "none";
+			};
+
+			// // When the user clicks anywhere outside of the modal, close it
+			// window.onclick = function (event) {
+			// 	if (event.target == modal) {
+			// 		modal.style.display = "none";
+			// 	}
+			// };
+
+			// end of modal
+
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+			function functionAlert() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				displayss.style.display = "none";
+				alert("Thank you!!! ");
+			}
+			function menuIcon() {
+				const value = document.getElementById("container_id");
+				var displayss = document.getElementById("top_bar");
+				var ul_class = document.getElementById("ul_class");
+				value.classList.toggle("change");
+				if (value.className == "container change") {
+					displayss.style.height = "auto";
+					displayss.style.width = "100%";
+					ul_class.style.display = "block";
+				} else {
+					ul_class.style.display = "none";
+					displayss.style.height = "90px";
+				}
+			}
+
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				if (x.matches) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x); // Call listener function at run time
+
+			x.addListener(mySAdwasd); // Attach listener function on state changes
+		</script>
+	</body>
+</html>

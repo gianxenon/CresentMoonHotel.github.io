@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Bellagio 1</title>
+		<link rel="stylesheet" href="styles/belagio1.css" />
+		<link rel="stylesheet" href="styles/img_view.css" />
+		<link rel="stylesheet" href="styles/media_query/belagio1_query.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div class="body_container">
+			<div class="top_bar" id="top_bar">
+				<img
+					class="index_logo"
+					src="./main_page/assets/Crescent.png"
+					width="90px"
+				/>
+				<h2 class="company_name_text">
+					CRESCENT CONDO AND OFFICE RENTALS INC.
+				</h2>
+
+				<ul class="ul_class" id="ul_class">
+					<li><a href="index.html" class="btn_home">HOME</a></li>
+					<li>
+						<a class="btn_home active" href="belagio1.html"> BELLAGIO 1 </a>
+					</li>
+					<li class="dropdown_button" onclick="dropMenu()">
+						<a>
+							SOUTH OF MARKET
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a id="soma" href="SouthOfMarket.html">Soma-One-BR</a>
+							<a id="soma" href="soma2.html">Soma-Two- BR</a>
+						</div>
+					</li>
+					<li><a href="twoSerendra.html">TWO SERENDRA</a></li>
+					<li>
+						<a href="otherProperties.html">OTHER PROPERTIES</a>
+					</li>
+				</ul>
+				<div id="container_id" class="container" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="row">
+					<div class="column section_one">
+						<h1 class="txt_belagio1">Bellagio Tower 1 - ONE-BR(1)</h1>
+						<h3 class="txt_belagio2">
+							If you are looking for a quiet, spacious 61 sq. m. fully
+							furnished<br />
+							One bedroom unit with a golf course view in Bonifacio Global City,
+							please contact us. <br />The unit is available for a long-term
+							lease
+						</h3>
+						<h3
+							style="
+								text-align: center;
+								display: block;
+								margin-top: 20px;
+								margin-bottom: 20px;
+								max-width: 500px;
+							"
+						>
+							Bellagio One condo for rent, facing golf course.
+						</h3>
+
+						<div class="row row_content" id="row_content">
+							<div class="column left_row">
+								<ul class="list_rowContent">
+									<li>One-BR unit</li>
+									<li>61 sq. m.</li>
+									<li>Fully furnished</li>
+									<li>Hot and cold shower</li>
+									<li>Complete kitchen utensils</li>
+									<li>PANASONIC split type inverter air conditioners</li>
+								</ul>
+							</div>
+
+							<div class="column right_row">
+								<ul class="list_rowContent">
+									<li>Use of condo amenities</li>
+									<li>Whirlpool heavy duty washer and dryer</li>
+									<li>Two flat screen TV's w/cable ready</li>
+									<li>Provision for Telephone and DSL with Wi-fi</li>
+									<li>Minimum one (1) year lease</li>
+									<li>All utilities by tenant</li>
+								</ul>
+							</div>
+
+							<div class="column right_row3">
+								<div class="column row_one">
+									<img
+										src="./main_page/assets/19D - Living Room.jpg"
+										style="object-fit: cover"
+										width="100%"
+										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
+									/>
+								</div>
+								<div class="column row_one">
+									<img
+										src="./main_page/assets/19D - Dining Area.jpg"
+										style="object-fit: cover"
+										width="100%"
+										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
+									/>
+								</div>
+
+								<div class="column row_one">
+									<img
+										src="./main_page/assets/19D - Kitchen.jpg"
+										style="object-fit: cover"
+										width="100%"
+										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
+									/>
+								</div>
+								<div class="column row_one">
+									<img
+										src="./main_page/assets/19D - Bedroom.jpg"
+										style="object-fit: cover"
+										width="100%"
+										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
+									/>
+								</div>
+								<div class="column row_one">
+									<img
+										src="./main_page/assets/19D - Bathroom.jpg"
+										style="object-fit: cover"
+										width="100%"
+										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
+									/>
+								</div>
+								<div class="column row_one">
+									<img
+										src="./main_page/assets/20180411_155859.jpg"
+										style="object-fit: cover"
+										width="100%"
+										height="100%"
+										onclick="openModal();currentSlide(1)"
+										class="hover-shadow cursor"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<img
+								src="./main_page/assets/19D - Living Room.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<img
+								src="./main_page/assets/19D - Dining Area.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<img
+								src="./main_page/assets/19D - Kitchen.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<img
+								src="./main_page/assets/19D - Bedroom.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<div class="mySlides">
+							<img
+								src="./main_page/assets/20180411_155859.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+						<div class="mySlides">
+							<img
+								src="./main_page/assets/19D - Bathroom.jpg"
+								style="width: 100%; height: 700px; object-fit: contain"
+							/>
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+				</div>
+				<!-- end of content -->
+			</div>
+		</div>
+
+		<script>
+			function openModal() {
+				document.getElementById("myModal").style.display = "block";
+			}
+
+			function closeModal() {
+				document.getElementById("myModal").style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides((slideIndex += n));
+			}
+
+			function currentSlide(n) {
+				showSlides((slideIndex = n));
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {
+					slideIndex = 1;
+				}
+				if (n < 1) {
+					slideIndex = slides.length;
+				}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				captionText.innerHTML = dots[slideIndex - 1].alt;
+			}
+			//end of modal
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+
+			function menuIcon() {
+				const value = document.getElementById("container_id");
+				var displayss = document.getElementById("top_bar");
+				var ul_class = document.getElementById("ul_class");
+				value.classList.toggle("change");
+				if (value.className == "container change") {
+					displayss.style.height = "auto";
+					displayss.style.width = "100%";
+					ul_class.style.display = "block";
+				} else {
+					ul_class.style.display = "none";
+					displayss.style.height = "90px";
+				}
+			}
+
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				if (x.matches) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x);
+
+			x.addListener(mySAdwasd);
+		</script>
+	</body>
+</html>

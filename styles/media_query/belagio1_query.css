@@ -1,0 +1,406 @@
+@media only screen and (max-width:1800px) {
+
+
+    div.top_bar {
+        width: 100%;
+        height: 90px;
+        background-color: rgba(0, 132, 255, 0.904);
+    }
+
+    div.top_bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        float: right;
+
+    }
+
+    div.top_bar ul li {
+        float: left;
+        text-align: center;
+    }
+
+    div.top_bar ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700
+    }
+
+    /* div.container {
+        display: block;
+        cursor: pointer;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        float: right;
+
+    } */
+
+    .index_logo {
+        width: 60px;
+        position: absolute;
+        top: 45px;
+        left: 100px;
+        transform: translate(-50%, -50%);
+    }
+
+    h2.company_name_text {
+
+        position: absolute;
+        top: 50px;
+        left: 350px;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:1450px) {
+
+
+    div.top_bar {
+        width: 100%;
+        height: 90px;
+        background-color: rgba(0, 132, 255, 0.904);
+    }
+
+    div.top_bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        float: right;
+        display: block;
+    }
+
+    div.top_bar ul li {
+        float: left;
+        text-align: center;
+
+    }
+
+    div.top_bar ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+
+    }
+
+    .index_logo {
+        width: 60px;
+        position: absolute;
+        top: 45px;
+        left: 100px;
+        transform: translate(-50%, -50%);
+
+    }
+
+    h2.company_name_text {
+        width: 200px;
+        position: absolute;
+        top: 45px;
+        left: 250px;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+
+    }
+
+
+    div.left_row {
+        width: 50%;
+        height: fit-content;
+        padding: 10px 60px;
+        margin: 0%;
+
+    }
+
+    div.right_row {
+        width: 50%;
+        height: fit-content;
+        padding: 10px 60px;
+        margin: 0%;
+
+    }
+
+    div.right_row3 {
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 10%;
+
+
+    }
+
+    div.row_one {
+        width: 30%;
+        height: 200px;
+        border-style: double;
+        overflow: hidden;
+        margin: 10px;
+    }
+}
+
+
+/* 1240px */
+
+
+@media only screen and (max-width:1240px) {
+
+
+    div.top_bar {
+        width: 100%;
+        max-height: fit-content;
+        background-color: rgba(0, 132, 255, 0.904);
+        z-index: 1;
+
+    }
+
+    div.container {
+        cursor: pointer;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: absolute;
+        top: 50px;
+        left: 90%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+
+    div.top_bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        margin-top: 90px;
+        float: none;
+        display: none;
+    }
+
+    .dropdown_button {
+        margin: 0px;
+    }
+
+    div.container:hover div.top_bar {
+        height: 200px;
+        cursor: pointer;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        float: right;
+        display: block;
+    }
+
+
+
+    div.top_bar ul li {
+        float: none;
+        text-align: center;
+
+
+    }
+
+    div.top_bar ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+
+    }
+
+    li.dropdown_button .dropdown-content {
+
+        position: static;
+        top: 90px;
+        outline: none;
+        background-color: rgba(0, 132, 255, 0.904);
+        min-width: 170px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.0);
+        margin: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+    }
+
+    div.dropdown_button:hover .dropdown-content {
+        background-color: rebeccapurple;
+        display: block;
+        position: static;
+
+    }
+
+    .index_logo {
+        width: 60px;
+        position: absolute;
+        top: 45px;
+        left: 100px;
+        transform: translate(-50%, -50%);
+
+    }
+
+    h2.company_name_text {
+        width: 200px;
+        position: absolute;
+        top: 45px;
+        left: 250px;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+
+    }
+
+    div.section_one {
+        width: 100%;
+        padding: 50px 50px 0px 100px;
+
+    }
+
+    div.right_row3 {
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 10%;
+
+        padding: 0;
+    }
+
+    div.row_one {
+        width: 40%;
+        height: 200px;
+        border-style: double;
+        overflow: hidden;
+
+    }
+
+
+}
+
+/* 600px */
+@media only screen and (max-width:600px) {
+
+    img.index_logo {
+        width: 60px;
+        position: absolute;
+        top: 45px;
+        left: 50px;
+        transform: translate(-50%, -50%);
+
+    }
+
+    h2.company_name_text {
+        width: 200px;
+        position: absolute;
+        top: 45px;
+        left: 200px;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+
+    }
+
+    h1.tagline_Text {
+        color: antiquewhite;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 56px;
+        display: block;
+        margin-top: 150px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    a.btn_inquire {
+        width: 200px;
+        color: white;
+        font-weight: 700;
+        background-color: rgba(240, 41, 41, 0.767);
+        padding: 20px 40px 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        display: block;
+        margin-top: 25px;
+        margin-left: 10%;
+    }
+
+    div.details_container {
+
+        max-width: fit-content;
+        height: 200px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgba(255, 255, 255, 0.342);
+        background-color: rgba(87, 83, 83, 0.521);
+        display: block;
+        padding: 20px 20px;
+        margin-top: 25px;
+        margin-left: 10%;
+    }
+
+    div.details_container p {
+
+        font-size: 14px;
+        color: antiquewhite;
+        line-height: 1.9;
+        font-weight: 700;
+    }
+
+    div.right_row3 {
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 10%;
+        padding: 0;
+    }
+
+    div.row_one {
+        width: 40%;
+        height: 200px;
+        border-style: double;
+        overflow: hidden;
+
+    }
+
+    div.left_row {
+
+        padding: 10px 0px;
+
+
+    }
+
+    div.right_row {
+
+        padding: 10px 0px;
+
+
+    }
+
+}

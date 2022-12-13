@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/media_query/index_query.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5" />
+		<!-- media="only screen and (max-width: 1800px)"    -->
+		<link rel="stylesheet" href="styles/index_css.css" />
+
+		<title>Crescent Condo Office Rentals</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var submitted = false;
+		</script>
+		<iframe
+			name="hiddenConfirm"
+			i="hiddenConfirm"
+			style="display: none"
+			onload="if(submitted){window.location='inquiryLandingPage.html';}"
+		></iframe>
+
+		<div class="body-container">
+			<div class="top_bar" id="top_bar">
+				<img
+					class="index_logo"
+					src="./main_page/assets/Crescent.png"
+					width="90px"
+				/>
+				<h2 class="company_name_text">
+					CRESCENT CONDO AND OFFICE RENTALS INC.
+				</h2>
+
+				<ul class="ul_class" id="ul_class">
+					<li><a href="index.html" class="btn_home active">HOME</a></li>
+					<li>
+						<a href="belagio1.html"> BELLAGIO 1 </a>
+					</li>
+					<li class="dropdown_button" onclick="dropMenu()">
+						<a class="">
+							SOUTH OF MARKET
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-content" id="dropdown-content">
+							<a id="soma" href="SouthOfMarket.html">Soma-One-BR</a>
+							<a id="soma" href="soma2.html">Soma-Two- BR </a>
+						</div>
+					</li>
+					<li><a href="twoSerendra.html">TWO SERENDRA</a></li>
+					<li>
+						<a href="otherProperties.html">OTHER PROPERTIES</a>
+					</li>
+				</ul>
+				<div id="container_id" class="container" onclick="menuIcon(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</div>
+			<h1 class="tagline_Text">
+				Welcome to BGC <br />
+				Condo Rentals
+			</h1>
+			<!-- onclick="myFunction(this)" -->
+			<button id="myBtn" class="btn_inquire">Inquire now</button>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">&times;</span>
+
+					<div class="form_container">
+						<form
+							action="https://docs.google.com/forms/d/e/1FAIpQLScx41eoiUDu-76V4rZ8VlopR8FdZf8l-_rYcqMbMoaFIa4LPQ/formResponse"
+							method="post"
+							target="hiddenConfirm"
+							onsubmit="submitted=true"
+						>
+							<label for="fname">FullName</label>
+							<input
+								type="text"
+								id="fname"
+								name="entry.987790137"
+								placeholder="FullName.."
+								required
+							/>
+
+							<label for="lname">Your Email</label>
+							<input
+								type="text"
+								id="lname"
+								name="entry.153055210"
+								placeholder="Your Email.."
+								required
+							/>
+
+							<label for="fname">Your location</label>
+							<input
+								type="text"
+								id="fname"
+								name="entry.148290603"
+								placeholder="Your location.."
+								required
+							/>
+
+							<label for="lname">Your mobile number</label>
+							<input
+								type="tel"
+								id="lname"
+								name="entry.1804039894"
+								placeholder="Your mobile number.."
+								pattern="[0-9]{11}"
+								required
+							/>
+							<label for="subject">Inquiry details</label>
+							<textarea
+								id="subject"
+								name="entry.942869824"
+								placeholder="Write something.."
+								style="height: 170px"
+								required
+							></textarea>
+							<button type="submit" value="Submit" class="btn_submit">
+								Submit
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="inquiry_questioniere" id="inquiry_questioniere">
+				<div class="btnClose_container">
+					<a class="btn_close" onclick="myFunction(this)">X</a>
+				</div>
+			</div>
+
+			<div class="details_container">
+				<p>For more Inquiries and/or Reservation</p>
+				<p>Call us at (632) 8659-8517</p>
+				<p>Wireless landline: (632) 8542-7309</p>
+				<p>or e-mail us at info@crescent-rentals.com</p>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+
+		<script>
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function () {
+				modal.style.display = "block";
+			};
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function () {
+				modal.style.display = "none";
+			};
+
+			// // When the user clicks anywhere outside of the modal, close it
+			// window.onclick = function (event) {
+			// 	if (event.target == modal) {
+			// 		modal.style.display = "none";
+			// 	}
+			// };
+
+			// end of modal
+
+			function dropMenu() {
+				const dropdownContent = document.getElementById("dropdown-content");
+				dropdownContent.style.display == "none"
+					? (dropdownContent.style.display = "block")
+					: (dropdownContent.style.display = "none");
+			}
+			function myFunction() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				if (displayss.style.display == "none") {
+					displayss.style.display = "block";
+				} else {
+					displayss.style.display = "none";
+				}
+			}
+			function functionAlert() {
+				var displayss = document.getElementById("inquiry_questioniere");
+				displayss.style.display = "none";
+				alert("Thank you!!! ");
+			}
+			function menuIcon() {
+				const value = document.getElementById("container_id");
+				var displayss = document.getElementById("top_bar");
+				var ul_class = document.getElementById("ul_class");
+				value.classList.toggle("change");
+				if (value.className == "container change") {
+					displayss.style.height = "auto";
+					displayss.style.width = "100%";
+					ul_class.style.display = "block";
+				} else {
+					ul_class.style.display = "none";
+					displayss.style.height = "90px";
+				}
+			}
+
+			function mySAdwasd(x) {
+				const dropdownMenu = document.getElementById("dropdownButton");
+				var ul_class = document.getElementById("ul_class");
+				const dropdownContent = document.getElementById("dropdown-content");
+				if (x.matches) {
+					// If media query matches
+					const value = document.getElementById("container_id");
+
+					var displayss = document.getElementById("top_bar");
+
+					if (value.className == "container change") {
+						// alert("im here now");
+						ul_class.style.display = "block";
+						ul_class.style.display = "none";
+						displayss.style.height = "90px";
+						value.classList.toggle("change");
+					} else {
+						displayss.style.display = "90px";
+						ul_class.style.display = "none";
+						dropdownContent.style.display = "none";
+					}
+				} else {
+					dropdownContent.style.display = "none";
+					ul_class.style.display = "block";
+				}
+			}
+
+			var x = window.matchMedia("(max-width:1240px)");
+
+			mySAdwasd(x); // Call listener function at run time
+
+			x.addListener(mySAdwasd); // Attach listener function on state changes
+		</script>
+	</body>
+</html>

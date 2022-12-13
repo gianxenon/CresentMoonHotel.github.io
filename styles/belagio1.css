@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+html,
+body {
+    font-family: "";
+    color: "#ffffff";
+    font-size: 16px;
+    height: 100%;
+    color: antiquewhite;
+    font-family: 'Raleway', sans-serif;
+}
+
+.body_container {
+
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url("../main_page/assets/Bellagio\ Background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.top_bar {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 132, 255, 0.904);
+    display: block;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.top_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+
+}
+
+.top_bar ul li {
+    float: left;
+    text-align: center;
+    margin: 0;
+
+}
+
+
+.top_bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700
+}
+
+
+.index_logo {
+    position: absolute;
+    top: 45px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.company_name_text {
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.btn_home.active {
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 700
+}
+
+.top_bar ul li a:hover {
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 700
+}
+
+.container {
+    cursor: pointer;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.dropdown_button {
+    margin: 0px;
+}
+
+
+.dropdown_button .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    outline: none;
+    background-color: rgba(0, 132, 255, 0.904);
+    /* rgba(0, 132, 255, 0.904) */
+    min-width: 230px;
+    height: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+#soma {
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 0px 20px 0px;
+    color: wheat;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 132, 255, 0.904);
+}
+
+
+
+.content {
+
+    width: 100%;
+    height: 100%;
+    height: fit-content;
+    padding: 100px 0px 0px 0px;
+    margin: 0px;
+
+}
+
+
+
+/* body css */
+
+
+/* Main Row Containers */
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 100%;
+    height: fit-content;
+
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section_one {
+    width: 100%;
+    padding: 50px 50px 0px 170px;
+
+}
+
+.section_two {
+    width: 100%;
+}
+
+
+/*end Main Row Containers */
+
+/* section_one content */
+.txt_belagio1 {
+    font-size: 66px;
+
+}
+
+
+/* Create three equal columns that floats next to each other */
+#row_content {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-radius: 15px;
+    /* Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+
+.left_row {
+    width: 20%;
+    height: 300px;
+    padding: 10px 60px;
+    margin: 0%;
+    float: left;
+
+}
+
+.right_row {
+    width: 20%;
+    height: 300px;
+    padding: 10px 60px;
+    margin: 0%;
+    float: left;
+
+}
+
+.list_rowContent {
+    list-style: square;
+
+}
+
+.list_rowContent li {
+    font-size: 1.5em;
+    margin: 10px;
+
+}
+
+.right_row3 {
+    width: 60%;
+    padding: 10px 60px;
+    margin: 0%;
+
+}
+
+.row_one {
+    width: 30%;
+    height: 250px;
+    border-style: double;
+    overflow: hidden;
+    margin: 10px;
+}
+
+/*End section_one content */
