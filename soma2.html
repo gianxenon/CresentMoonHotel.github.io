@@ -27,7 +27,6 @@
 				display: none;
 				background-color: rgb(18, 63, 129);
 			}
-
 			#myBtn:hover {
 				background-color: black;
 			}
@@ -649,9 +648,8 @@
 					<a class="next" onclick="plusSlides4(1)">&#10095;</a>
 				</div>
 			</div>
-			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
-				Top
-			</button>
+
+			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top"> Top </a>
 		</div>
 
 		<!-- Script -->
@@ -700,7 +698,7 @@
 				showSlides((slideIndex += n));
 			}
 
-			function currentSlide(n) {
+			function currentSlide1(n) {
 				showSlides((slideIndex = n));
 			}
 
@@ -853,7 +851,7 @@
 						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "myBtn":
-						top_bar.scrollIntoView({ behavior: "smooth" });
+						top_bar.scrollIntoView({ behavior: "auto" });
 						document.getElementById("myBtn").style.display = "none";
 						break;
 					default:

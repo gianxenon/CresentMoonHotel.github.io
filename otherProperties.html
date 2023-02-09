@@ -19,16 +19,14 @@
 				font-size: 18px;
 				border: none;
 				outline: none;
-				color: white;
 				cursor: pointer;
-				padding: 15px;
-				border-radius: 4px;
-				display: none;
-				background-color: rgb(18, 63, 129);
-			}
 
-			#myBtn:hover {
-				background-color: black;
+				border-radius: 5px;
+				display: none;
+				background-color: white;
+				border-radius: 50%;
+				height: 40px;
+				width: 40px;
 			}
 		</style>
 	</head>
@@ -63,7 +61,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="twoSerendra.html"> TWO SERENDRA </a>
+						<a href="TwoSerendra.html"> TWO SERENDRA </a>
 					</li>
 					<li>
 						<a class="op_active active" href="otherProperties.html"
@@ -839,9 +837,18 @@
 					<a class="next" onclick="plusSlides5(1)">&#10095;</a>
 				</div>
 			</div>
-			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
-				Top
-			</button>
+			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
+				<img
+					src="./main_page/assets/backToTop.png"
+					width="25px"
+					style="
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					"
+				/>
+			</a>
 		</div>
 
 		<!-- Script -->
@@ -1078,7 +1085,7 @@
 						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "myBtn":
-						top_bar.scrollIntoView({ behavior: "smooth" });
+						top_bar.scrollIntoView({ behavior: "auto" });
 						document.getElementById("myBtn").style.display = "none";
 						break;
 					default:
@@ -1144,6 +1151,7 @@
 			}
 
 			var x = window.matchMedia("(max-width:1240px)");
+			var bodyscrll = document.getElementById("bodyContainer");
 
 			mySAdwasd(x); // Call listener function at run time
 

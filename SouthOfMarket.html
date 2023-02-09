@@ -7,9 +7,11 @@
 		<link rel="stylesheet" href="styles/img_view.css" />
 		<link rel="stylesheet" href="styles/media_query/southOfMarket_query.css" />
 		<link
+			href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			type="text/css"
 		/>
+
 		<style>
 			#myBtn {
 				position: fixed;
@@ -26,7 +28,6 @@
 				display: none;
 				background-color: rgb(18, 63, 129);
 			}
-
 			#myBtn:hover {
 				background-color: black;
 			}
@@ -909,9 +910,7 @@
 				</div>
 			</div>
 
-			<button onclick="subBarBtn(this.id)" id="myBtn" title="Go to top">
-				Top
-			</button>
+			<a onclick="subBarBtn(this.id)" id="myBtn" title="Go to top"> Top </a>
 			<!-- end of body -->
 		</div>
 
@@ -1182,9 +1181,9 @@
 						document.getElementById("myBtn").style.display = "block";
 						break;
 					case "myBtn":
-						top_bar.scrollIntoView({ behavior: "smooth" });
+						top_bar.scrollIntoView({ behavior: "auto" });
 						document.getElementById("myBtn").style.display = "none";
-						document.getElementById("myBtn").style.display = "block";
+
 						break;
 					default:
 						location.href = "SouthOfMarket.html";
